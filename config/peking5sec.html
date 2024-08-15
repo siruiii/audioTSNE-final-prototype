@@ -57,12 +57,13 @@
     </a-assets>
     <a-sky src="#yourSkyboxImage"></a-sky>
 
-    <a-entity id="leftHand" laser-controls="hand: left" raycaster="objects: .raycastable" line="color: #118A7E">
+    <a-entity rotation="0 86 0"><a-entity id="leftHand" laser-controls="hand: left" raycaster="objects: .raycastable" line="color: #118A7E">
       <a-plane id="progress-panel" position="0 0.08 0" rotation="0 0 0" width="0.2" height="0.02" color="#fff"></a-plane>
       <a-plane id="progress-fill" position="0 0.08 0.005" rotation="0 0 0" width="0" height="0.02" color="green"></a-plane>
     </a-entity>
     
-    <a-entity id="rightHand" laser-controls="hand: right" raycaster="objects: .raycastable" line="color: #118A7E"></a-entity>
+    <a-entity id="rightHand" laser-controls="hand: right" raycaster="objects: .raycastable" line="color: #118A7E"></a-entity></a-entity>
+  
     <a-entity rotation="0 86 0"><a-camera position="0 0 0" id="camera"></a-camera></a-entity>
     <a-entity id="sphere-container"></a-entity>
   </a-scene>
