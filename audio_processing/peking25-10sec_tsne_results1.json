@@ -1,0 +1,527 @@
+[
+    {
+        "path": "../audio_processing/peking25-10sec/92_910000.wav",
+        "point": [
+            51.06371307373047,
+            -8.244071006774902
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/143_1420000.wav",
+        "point": [
+            -70.4983901977539,
+            -22.708097457885742
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/84_830000.wav",
+        "point": [
+            60.05957794189453,
+            4.422346115112305
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/127_1260000.wav",
+        "point": [
+            52.643375396728516,
+            33.522762298583984
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/80_790000.wav",
+        "point": [
+            68.91165924072266,
+            18.17283821105957
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/87_860000.wav",
+        "point": [
+            77.10215759277344,
+            0.31095170974731445
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/103_1020000.wav",
+        "point": [
+            -42.79093551635742,
+            -5.16930627822876
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/118_1170000.wav",
+        "point": [
+            -107.5286865234375,
+            16.000661849975586
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/119_1180000.wav",
+        "point": [
+            -90.88856506347656,
+            22.448213577270508
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/137_1360000.wav",
+        "point": [
+            11.37203598022461,
+            19.023534774780273
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/150_1490000.wav",
+        "point": [
+            115.08121490478516,
+            -9.953566551208496
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/148_1470000.wav",
+        "point": [
+            19.579044342041016,
+            -37.38494873046875
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/149_1480000.wav",
+        "point": [
+            114.97344207763672,
+            -46.957740783691406
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/113_1120000.wav",
+        "point": [
+            3.4927754402160645,
+            -44.0294075012207
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/109_1080000.wav",
+        "point": [
+            9.157394409179688,
+            -13.144543647766113
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/108_1070000.wav",
+        "point": [
+            -14.99057388305664,
+            -35.36228942871094
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/85_840000.wav",
+        "point": [
+            50.09267044067383,
+            -22.49610710144043
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/110_1090000.wav",
+        "point": [
+            35.30337142944336,
+            -15.035788536071777
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/147_1460000.wav",
+        "point": [
+            7.930234432220459,
+            3.420074939727783
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/138_1370000.wav",
+        "point": [
+            -52.56324005126953,
+            56.953556060791016
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/83_820000.wav",
+        "point": [
+            64.80856323242188,
+            -25.801982879638672
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/139_1380000.wav",
+        "point": [
+            -104.70223999023438,
+            -2.9734647274017334
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/123_1220000.wav",
+        "point": [
+            -88.22940063476562,
+            6.773910045623779
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/96_950000.wav",
+        "point": [
+            17.9976749420166,
+            -54.98143768310547
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/107_1060000.wav",
+        "point": [
+            -25.769506454467773,
+            -0.6973834037780762
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/89_880000.wav",
+        "point": [
+            96.64041900634766,
+            -38.17613220214844
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/129_1280000.wav",
+        "point": [
+            -6.893759250640869,
+            19.986705780029297
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/128_1270000.wav",
+        "point": [
+            -32.907901763916016,
+            50.08794021606445
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/81_800000.wav",
+        "point": [
+            65.5979995727539,
+            -11.087767601013184
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/133_1320000.wav",
+        "point": [
+            -31.250524520874023,
+            32.649322509765625
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/130_1290000.wav",
+        "point": [
+            -26.470252990722656,
+            17.848785400390625
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/140_1390000.wav",
+        "point": [
+            -76.6847915649414,
+            -5.15108585357666
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/90_890000.wav",
+        "point": [
+            81.13294982910156,
+            -31.59543800354004
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/117_1160000.wav",
+        "point": [
+            29.822704315185547,
+            33.08256530761719
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/76_750000.wav",
+        "point": [
+            38.1696662902832,
+            -48.19005584716797
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/88_870000.wav",
+        "point": [
+            51.757362365722656,
+            -37.93687057495117
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/135_1340000.wav",
+        "point": [
+            -54.85941696166992,
+            10.395039558410645
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/95_940000.wav",
+        "point": [
+            36.70393371582031,
+            -30.728607177734375
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/132_1310000.wav",
+        "point": [
+            -51.158729553222656,
+            -20.794355392456055
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/124_1230000.wav",
+        "point": [
+            -103.57804870605469,
+            35.33820724487305
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/77_760000.wav",
+        "point": [
+            21.39515495300293,
+            -21.960905075073242
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/111_1100000.wav",
+        "point": [
+            80.39696502685547,
+            -49.00249481201172
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/116_1150000.wav",
+        "point": [
+            67.51815032958984,
+            -41.091915130615234
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/122_1210000.wav",
+        "point": [
+            -75.68543243408203,
+            24.628402709960938
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/141_1400000.wav",
+        "point": [
+            -67.10914611816406,
+            41.49484634399414
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/134_1330000.wav",
+        "point": [
+            -60.308433532714844,
+            -4.512470722198486
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/97_960000.wav",
+        "point": [
+            58.032066345214844,
+            -54.254844665527344
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/125_1240000.wav",
+        "point": [
+            -74.16065216064453,
+            57.103309631347656
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/146_1450000.wav",
+        "point": [
+            -60.4794921875,
+            26.40458106994629
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/106_1050000.wav",
+        "point": [
+            -10.528617858886719,
+            4.187085151672363
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/82_810000.wav",
+        "point": [
+            44.4219856262207,
+            -66.75193786621094
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/101_1000000.wav",
+        "point": [
+            38.7979621887207,
+            -0.19000886380672455
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/94_930000.wav",
+        "point": [
+            81.28008270263672,
+            -16.199277877807617
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/98_970000.wav",
+        "point": [
+            110.47193145751953,
+            7.963741302490234
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/144_1430000.wav",
+        "point": [
+            -94.44281768798828,
+            53.73759841918945
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/131_1300000.wav",
+        "point": [
+            -39.133140563964844,
+            9.531463623046875
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/136_1350000.wav",
+        "point": [
+            -70.62134552001953,
+            10.428133010864258
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/115_1140000.wav",
+        "point": [
+            88.62907409667969,
+            15.376960754394531
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/104_1030000.wav",
+        "point": [
+            -44.712039947509766,
+            23.32857322692871
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/99_980000.wav",
+        "point": [
+            116.82929992675781,
+            -27.593935012817383
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/112_1110000.wav",
+        "point": [
+            91.32117462158203,
+            -62.417850494384766
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/91_900000.wav",
+        "point": [
+            94.45941162109375,
+            -4.4872283935546875
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/86_850000.wav",
+        "point": [
+            23.82478141784668,
+            -5.808044910430908
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/145_1440000.wav",
+        "point": [
+            -90.3169174194336,
+            -15.914952278137207
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/78_770000.wav",
+        "point": [
+            26.940698623657227,
+            11.238777160644531
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/126_1250000.wav",
+        "point": [
+            -30.821224212646484,
+            -17.323566436767578
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/142_1410000.wav",
+        "point": [
+            -47.748085021972656,
+            39.09175109863281
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/121_1200000.wav",
+        "point": [
+            8.162038803100586,
+            36.55855178833008
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/114_1130000.wav",
+        "point": [
+            70.92279052734375,
+            -67.90113067626953
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/120_1190000.wav",
+        "point": [
+            -13.527462005615234,
+            34.998390197753906
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/93_920000.wav",
+        "point": [
+            99.01001739501953,
+            -21.280317306518555
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/102_1010000.wav",
+        "point": [
+            -7.027390003204346,
+            -15.417284965515137
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/100_990000.wav",
+        "point": [
+            3.8111586570739746,
+            -26.843597412109375
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/79_780000.wav",
+        "point": [
+            46.61490249633789,
+            14.920733451843262
+        ]
+    },
+    {
+        "path": "../audio_processing/peking25-10sec/105_1040000.wav",
+        "point": [
+            -84.15441131591797,
+            38.65254211425781
+        ]
+    }
+]
