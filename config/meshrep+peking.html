@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>C-Meshrep+Peking Opera(10sec)</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="./logTrajectory.js"></script>
+  <style>
+    #progress-container {
+      width: 100%;
+      background-color: #f3f3f3;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+    }
+    #progress-bar {
+      width: 0%;
+      height: 20px;
+      background-color: #4caf50;
+    }
+    #button-container {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      z-index: 10000;
+    }
+    #myButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #myButton:hover {
+      background-color: grey;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+  
+  <!-- Button Container -->
+  <div id="button-container">
+    <button id="myButton">Download Trajectory</button>
+  </div>
+  
+  <a-scene>
+    <a-assets>
+      <img id="yourSkyboxImage" src="https://cdn.glitch.global/e6d07a78-b93b-488b-bcea-1d44459841de/Street%20View%20360.webp?v=1723477283810" crossorigin="anonymous"/>
+    </a-assets>
+    <a-sky src="#yourSkyboxImage"></a-sky>
+
+    <a-entity id="leftHand" laser-controls="hand: left" raycaster="objects: .raycastable" line="color: #118A7E">
+      <a-plane id="progress-panel" position="0 0.08 0" rotation="0 0 0" width="0.2" height="0.02" color="#fff"></a-plane>
+      <a-plane id="progress-fill" position="0 0.08 0.005" rotation="0 0 0" width="0" height="0.02" color="green"></a-plane>
+    </a-entity>
+    
+    <a-entity id="rightHand" laser-controls="hand: right" raycaster="objects: .raycastable" line="color: #118A7E"></a-entity>
+    <a-entity rotation="0 0 0"><a-camera position="0 0 0" id="camera"></a-camera></a-entity>
+    <a-entity id="sphere-container"></a-entity>
+  </a-scene>
+  
+  <script>
+    let currentlyPlayingSound = null;
+    let startTime = null;
+    let clickedPoints = new Set();
+    let totalPoint = 0;
+    let previousSphere = null;
+    const soundStatus = {}; // Track sound status
+    const jsonUrl = "../audio_processing/meshrep+peking_tsne_results.json";
+
+    loadAndPreloadSounds(jsonUrl);
+
+    document.querySelector('#myButton').addEventListener('click', () => {
+      downloadLog();
+      alert('Trajectory saved!');
+    });
+
+    function loadAndPreloadSounds(url) {
+      fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+          totalPoint = data.length;
+          const container = document.getElementById("sphere-container");
+          const maxX = Math.max(...data.map(item => item.point[1]*15));
+          const minX = Math.min(...data.map(item => item.point[1]*15));
+          const rangeX = maxX - minX;
+          const radius = 150;
+
+          console.log(url,totalPoint);
+
+          // Create audio elements for preloading
+          data.forEach((item) => {
+            const soundPath = item.path;
+            soundStatus[soundPath] = { played: false, ended: false };
+
+            // Rest of your sphere and sound creation logic
+            const point = item.point;
+            const id = parseInt(soundPath.split('/').pop().split('_')[0], 10)-75;
+            const x2d = point[1]*15;
+            const y2d = point[0]*15;
+            const z2d = 150;
+            const theta = ((x2d - minX) / rangeX) * 2 * Math.PI;
+            const x3d = radius * Math.cos(theta);
+            const z3d = radius * Math.sin(theta);
+            const y3d = y2d;
+
+            // Create the sphere
+            const entityType = soundPath.split('/')[3] === "meshrep25-10sec" ? "a-sphere" : "a-box";
+        const entity = document.createElement(entityType);
+        if(entityType=="a-box"){
+            entity.setAttribute("width", "4");
+            entity.setAttribute("height", "4");
+            entity.setAttribute("depth", "4");
+        }else{
+            entity.setAttribute("radius", "2"); // Adjust attributes based on the type
+        }
+        entity.setAttribute("id", id);
+        entity.setAttribute("position", `${x3d} ${y3d} ${z3d}`);
+        entity.setAttribute("color", "white");
+        entity.classList.add('raycastable');
+
+            // Create the sound entity
+            const sound = document.createElement("a-sound");
+            sound.setAttribute("src", soundPath);
+            sound.setAttribute("autoplay", "false");
+            sound.setAttribute("volume", "0");
+            entity.appendChild(sound);
+            container.appendChild(entity);
+            testPlaySound(sound);
+
+            if(id==1){
+              if(entityType=="a-box"){
+            entity.setAttribute("width", "8");
+            entity.setAttribute("height", "8");
+            entity.setAttribute("depth", "8");
+        }else{
+            entity.setAttribute("radius", "5"); // Adjust attributes based on the type
+        }
+        entity.setAttribute("color","yellow");
+            }
+
+            const label = document.createElement('a-text');
+            label.setAttribute('value', id);
+            label.setAttribute('align', 'center');
+            label.setAttribute('position', `0 6 0`); // Position above the sphere
+            label.setAttribute('scale', '20 20 10'); // Adjust scale for better visibility
+            label.setAttribute('color', 'white');
+            entity.appendChild(label);
+
+            entity.addEventListener("raycaster-intersected", () => {
+          sound.setAttribute('volume', 50);
+          if (previousSphere && previousSphere !== entity) {
+            previousSphere.setAttribute("radius", "2");
+            previousSphere.setAttribute("color", "green");
+            if (currentlyPlayingSound) {
+              currentlyPlayingSound.components.sound.stopSound();
+              logDurationAndStopSound();
+            }
+          }
+
+          if (currentlyPlayingSound === sound) {
+            if(entityType=="a-box"){
+            entity.setAttribute("width", "4");
+            entity.setAttribute("height", "4");
+            entity.setAttribute("depth", "4");
+        }else{
+            entity.setAttribute("radius", "2"); // Adjust attributes based on the type
+        }
+            entity.setAttribute("color", "white");
+            sound.components.sound.stopSound();
+            startTime = null;
+            currentlyPlayingSound = null;
+          } else {
+            if(entityType=="a-box"){
+            entity.setAttribute("width", "8");
+            entity.setAttribute("height", "8");
+            entity.setAttribute("depth", "8");
+        }else{
+            entity.setAttribute("radius", "4"); // Adjust attributes based on the type
+        }
+            entity.setAttribute("color", "red");
+            sound.components.sound.playSound();
+            currentlyPlayingSound = sound;
+            startTime = new Date();
+          }
+
+          previousSphere = entity;
+          clickedPoints.add(id);
+          updateProgressBar();
+        });
+
+            sound.addEventListener('sound-ended', () => {
+          if (entity === previousSphere) {
+            if(entityType=="a-box"){
+            entity.setAttribute("width", "4");
+            entity.setAttribute("height", "4");
+            entity.setAttribute("depth", "4");
+        }else{
+            entity.setAttribute("radius", "2"); // Adjust attributes based on the type
+        }
+            entity.setAttribute("color", "green");
+          }
+          logDurationAndStopSound();
+        });
+          });
+        })
+        .catch((error) => console.error("Error loading JSON:", error));
+    }
+
+    function logDurationAndStopSound() {
+      if (currentlyPlayingSound) {
+        currentlyPlayingSound.components.sound.stopSound();
+        const endTime = new Date();
+        const duration = (endTime - startTime) / 1000;
+        const soundPath = currentlyPlayingSound.getAttribute('src');
+        console.log(`Duration: ${duration}, Path: ${soundPath}`);
+        startTime = null;
+        currentlyPlayingSound = null;
+      }
+    }
+
+    function updateProgressBar() {
+      const progressBar = document.getElementById("progress-bar");
+      const percentage = (clickedPoints.size / totalPoint) * 100;
+      progressBar.style.width = `${percentage}%`;
+      var progressPanel = document.querySelector('#progress-panel');
+      var progressFill = document.querySelector('#progress-fill');
+      progressFill.setAttribute('width', percentage / 100 * (progressPanel.getAttribute('width')));
+      updateProgressFillPosition();
+    }
+
+    function updateProgressFillPosition() {
+      var progressPanel = document.querySelector('#progress-panel');
+      var progressFill = document.querySelector('#progress-fill');
+      
+      var panelWidth = progressPanel.getAttribute('width');
+      var fillWidth = progressFill.getAttribute('width');
+      var newPositionX = - (panelWidth / 2) + (fillWidth / 2);
+      
+      progressFill.setAttribute('position', `${newPositionX} 0.08 0.005`);
+    }
+
+    function testPlaySound(sound) {      
+  const soundPath = sound.getAttribute('src');
+  soundStatus[soundPath] = { played: true, ended: false };
+
+  setTimeout(() => {
+    if (sound && sound.components && sound.components.sound) {
+      sound.components.sound.playSound();
+      setTimeout(() => {
+        sound.components.sound.stopSound();
+        soundStatus[soundPath].ended = true; // Mark sound as ended
+        checkAllSoundsEnded(); // Check if all sounds have finished
+      }, 500);
+    } else {
+      console.error('Sound component not found or not initialized.');
+    }
+  }, 100);
+}
+
+function checkAllSoundsEnded() {
+  // Check if all sounds have ended
+  const allSoundsEnded = Object.values(soundStatus).every(status => status.ended);
+  if (allSoundsEnded) {
+    setTimeout(() => {
+      alert("Ready! Please click VR to start...");  
+      }, 5000);
+  }
+}
+
+
+    function updateLabelRotation() {
+  const camera = document.querySelector('#camera');
+  const spheres = document.querySelectorAll('a-sphere');
+  const boxes = document.querySelectorAll('a-box');
+  
+  spheres.forEach(sphere => {
+    const label = sphere.querySelector('a-text');
+    if (label) {
+      // Get the camera's rotation
+      const cameraRotation = camera.getAttribute('rotation');
+      // console.log(cameraRotation);
+      const adjustedXRotation = cameraRotation.x + 0;
+      const adjustedYRotation = cameraRotation.y + 0;
+      const adjustedZRotation = cameraRotation.z + 0;
+      // Calculate the rotation to make the label face the camera
+      const labelRotation = `${adjustedXRotation} ${adjustedYRotation} ${adjustedZRotation}`;
+      // Set the label's rotation
+      label.setAttribute('rotation', labelRotation);
+    }
+  });
+  boxes.forEach(sphere => {
+    const label = sphere.querySelector('a-text');
+    if (label) {
+      // Get the camera's rotation
+      const cameraRotation = camera.getAttribute('rotation');
+      // console.log(cameraRotation);
+      const adjustedXRotation = cameraRotation.x + 0;
+      const adjustedYRotation = cameraRotation.y + 0;
+      const adjustedZRotation = cameraRotation.z + 0;
+      // Calculate the rotation to make the label face the camera
+      const labelRotation = `${adjustedXRotation} ${adjustedYRotation} ${adjustedZRotation}`;
+      // Set the label's rotation
+      label.setAttribute('rotation', labelRotation);
+    }
+  });
+}
+    AFRAME.registerComponent('label-rotation-updater', {
+  tick: function () {
+    updateLabelRotation();
+  }
+});
+
+    // Add this component to the scene or any entity to make it active
+    document.querySelector('a-scene').setAttribute('label-rotation-updater', '');
+  </script>
+</body>
+</html>
