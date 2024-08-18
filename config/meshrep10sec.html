@@ -57,11 +57,10 @@
     </a-assets>
     <a-sky src="#yourSkyboxImage"></a-sky>
 
-    <a-entity rotation="0 43 0">
     <a-entity id="leftHand" laser-controls="hand: left" raycaster="objects: .raycastable" line="color: #118A7E"></a-entity>
     
-    <a-entity id="rightHand" laser-controls="hand: right" raycaster="objects: .raycastable" line="color: #118A7E"></a-entity></a-entity>
-    <a-entity rotation="0 43 0"><a-camera position="0 0 0" id="camera"><a-cursor></a-cursor></a-camera></a-entity>
+    <a-entity id="rightHand" laser-controls="hand: right" raycaster="objects: .raycastable" line="color: #118A7E"></a-entity>
+    <a-camera position="0 0 0" id="camera"></a-camera>
     <a-entity id="sphere-container"></a-entity>
   </a-scene>
   
@@ -112,21 +111,6 @@
             sphere.setAttribute("color", "white");
             sphere.classList.add('raycastable');
 
-            const cluster=item.cluster;
-            if (cluster==0){
-              sphere.setAttribute("color", "blue");
-            }else if (cluster==1){
-              sphere.setAttribute("color", "purple");
-            }else if (cluster==2){
-              sphere.setAttribute("color", "orange");
-            }else if (cluster==3){
-              sphere.setAttribute("color", "pink");
-            }else if (cluster==4){
-              sphere.setAttribute("color", "grey");
-            }else if (cluster==5){
-              sphere.setAttribute("color", "black");
-            }
-
             // Create the sound entity
             const sound = document.createElement("a-sound");
             sound.setAttribute("src", soundPath);
@@ -135,14 +119,6 @@
             sphere.appendChild(sound);
             container.appendChild(sphere);
             testPlaySound(sound);
-
-            const label = document.createElement('a-text');
-            label.setAttribute('value', id);
-            label.setAttribute('align', 'center');
-            label.setAttribute('position', `0 6 0`); // Position above the sphere
-            label.setAttribute('scale', '20 20 10'); // Adjust scale for better visibility
-            label.setAttribute('color', 'white');
-            sphere.appendChild(label);
 
             sphere.addEventListener("raycaster-intersected", () => {
               // Check if there was a previous sphere
@@ -209,61 +185,32 @@
     }
 
     function testPlaySound(sound) {      
-  const soundPath = sound.getAttribute('src');
-  soundStatus[soundPath] = { played: true, ended: false };
+      const soundPath = sound.getAttribute('src');
+      soundStatus[soundPath] = { played: true, ended: false };
 
-  setTimeout(() => {
-    if (sound && sound.components && sound.components.sound) {
-      sound.components.sound.playSound();
       setTimeout(() => {
-        sound.components.sound.stopSound();
-        soundStatus[soundPath].ended = true; // Mark sound as ended
-        checkAllSoundsEnded(); // Check if all sounds have finished
-      }, 500);
-    } else {
-      console.error('Sound component not found or not initialized.');
+        if (sound && sound.components && sound.components.sound) {
+          sound.components.sound.playSound();
+          setTimeout(() => {
+            sound.components.sound.stopSound();
+            soundStatus[soundPath].ended = true; // Mark sound as ended
+            checkAllSoundsEnded(); // Check if all sounds have finished
+          }, 500);
+        } else {
+          console.error('Sound component not found or not initialized.');
+        }
+      }, 100);
     }
-  }, 100);
-}
 
-function checkAllSoundsEnded() {
-  // Check if all sounds have ended
-  const allSoundsEnded = Object.values(soundStatus).every(status => status.ended);
-  if (allSoundsEnded) {
-    setTimeout(() => {
-      alert("Ready! Please click VR to start...");  
-      }, 30000);
-  }
-}
-
-
-    function updateLabelRotation() {
-  const camera = document.querySelector('#camera');
-  const spheres = document.querySelectorAll('a-sphere');
-  
-  spheres.forEach(sphere => {
-    const label = sphere.querySelector('a-text');
-    if (label) {
-      // Get the camera's rotation
-      const cameraRotation = camera.getAttribute('rotation');
-      const adjustedXRotation = cameraRotation.x + 0;
-      const adjustedYRotation = cameraRotation.y + 43;
-      const adjustedZRotation = cameraRotation.z + 0;
-      // Calculate the rotation to make the label face the camera
-      const labelRotation = `${adjustedXRotation} ${adjustedYRotation} ${adjustedZRotation}`;
-      // Set the label's rotation
-      label.setAttribute('rotation', labelRotation);
+    function checkAllSoundsEnded() {
+      // Check if all sounds have ended
+      const allSoundsEnded = Object.values(soundStatus).every(status => status.ended);
+      if (allSoundsEnded) {
+        setTimeout(() => {
+          alert("Ready! Please click VR to start...");  
+          }, 30000);
+      }
     }
-  });
-}
-    AFRAME.registerComponent('label-rotation-updater', {
-  tick: function () {
-    updateLabelRotation();
-  }
-});
-
-    // Add this component to the scene or any entity to make it active
-    document.querySelector('a-scene').setAttribute('label-rotation-updater', '');
   </script>
 </body>
 
