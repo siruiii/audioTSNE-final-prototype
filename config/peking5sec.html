@@ -75,7 +75,7 @@
     let totalPoint = 0;
     let previousSphere = null;
     const soundStatus = {}; // Track sound status
-    const jsonUrl = "../3-Mapping/peking25-5sec_coordinates.json";
+    const jsonUrl = "../3-Mapping/peking25-5sec_coordinates1.json";
 
     loadAndPreloadSounds(jsonUrl);
 
@@ -120,10 +120,16 @@
             const cluster=item.cluster;
             if (cluster==0){
               sphere.setAttribute("color", "blue");
-            }else if (cluster==2){
+            }else if (cluster==1){
               sphere.setAttribute("color", "purple");
-            }else if (cluster==3){
+            }else if (cluster==2){
               sphere.setAttribute("color", "orange");
+            }else if (cluster==3){
+              sphere.setAttribute("color", "pink");
+            }else if (cluster==4){
+              sphere.setAttribute("color", "grey");
+            }else if (cluster==5){
+              sphere.setAttribute("color", "black");
             }
 
             // Create the sound entity
