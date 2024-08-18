@@ -58,13 +58,10 @@
     <a-sky src="#yourSkyboxImage"></a-sky>
 
     <a-entity rotation="0 43 0">
-    <a-entity id="leftHand" laser-controls="hand: left" raycaster="objects: .raycastable" line="color: #118A7E">
-      <a-plane id="progress-panel" position="0 0.08 0" rotation="0 0 0" width="0.2" height="0.02" color="#fff"></a-plane>
-      <a-plane id="progress-fill" position="0 0.08 0.005" rotation="0 0 0" width="0" height="0.02" color="green"></a-plane>
-    </a-entity>
+    <a-entity id="leftHand" laser-controls="hand: left" raycaster="objects: .raycastable" line="color: #118A7E"></a-entity>
     
     <a-entity id="rightHand" laser-controls="hand: right" raycaster="objects: .raycastable" line="color: #118A7E"></a-entity></a-entity>
-    <a-entity rotation="0 43 0"><a-camera position="0 0 0" id="camera"></a-camera></a-entity>
+    <a-entity rotation="0 43 0"><a-camera position="0 0 0" id="camera"><a-cursor></a-cursor></a-camera></a-entity>
     <a-entity id="sphere-container"></a-entity>
   </a-scene>
   
@@ -75,11 +72,13 @@
     let totalPoint = 0;
     let previousSphere = null;
     const soundStatus = {}; // Track sound status
-    const jsonUrl = "../audio_processing/meshrep25-10sec_tsne_results.json";
+    const jsonUrl = "../3-Mapping/meshrep25-10sec_coordinates.json";
 
     loadAndPreloadSounds(jsonUrl);
 
     document.querySelector('#myButton').addEventListener('click', () => {
+      const element = document.getElementById("progress-bar");
+      console.log(element.style.width);
       downloadLog();
       alert('Trajectory saved!');
     });
@@ -90,10 +89,6 @@
         .then((data) => {
           totalPoint = data.length;
           const container = document.getElementById("sphere-container");
-          const maxX = Math.max(...data.map(item => item.point[1]));
-          const minX = Math.min(...data.map(item => item.point[1]));
-          const rangeX = maxX - minX;
-          const radius = 150;
 
           console.log(url,totalPoint);
 
@@ -103,15 +98,11 @@
             soundStatus[soundPath] = { played: false, ended: false };
 
             // Rest of your sphere and sound creation logic
-            const point = item.point;
-            const id = parseInt(soundPath.split('/').pop().split('_')[0], 10)-75;
-            const x2d = point[1];
-            const y2d = point[0];
-            const z2d = 150;
-            const theta = ((x2d - minX) / rangeX) * 2 * Math.PI;
-            const x3d = radius * Math.cos(theta);
-            const z3d = radius * Math.sin(theta);
-            const y3d = y2d;
+            const point = item.point3d;
+            const id = parseInt(soundPath.split('/').pop().split('_')[0], 10);
+            const x3d = point[0];
+            const z3d = point[2];
+            const y3d = point[1];
 
             // Create the sphere
             const sphere = document.createElement("a-sphere");
@@ -121,6 +112,21 @@
             sphere.setAttribute("color", "white");
             sphere.classList.add('raycastable');
 
+            const cluster=item.cluster;
+            if (cluster==0){
+              sphere.setAttribute("color", "blue");
+            }else if (cluster==2){
+              sphere.setAttribute("color", "purple");
+            }else if (cluster==3){
+              sphere.setAttribute("color", "orange");
+            }else if (cluster==4){
+              sphere.setAttribute("color", "pink");
+            }else if (cluster==5){
+              sphere.setAttribute("color", "grey");
+            }else if (cluster==6){
+              sphere.setAttribute("color", "black");
+            }
+
             // Create the sound entity
             const sound = document.createElement("a-sound");
             sound.setAttribute("src", soundPath);
@@ -129,11 +135,6 @@
             sphere.appendChild(sound);
             container.appendChild(sphere);
             testPlaySound(sound);
-
-            if(id==1){
-              sphere.setAttribute("radius", "5");
-              sphere.setAttribute("color","yellow");
-            }
 
             const label = document.createElement('a-text');
             label.setAttribute('value', id);
@@ -205,21 +206,6 @@
       const progressBar = document.getElementById("progress-bar");
       const percentage = (clickedPoints.size / totalPoint) * 100;
       progressBar.style.width = `${percentage}%`;
-      var progressPanel = document.querySelector('#progress-panel');
-      var progressFill = document.querySelector('#progress-fill');
-      progressFill.setAttribute('width', percentage / 100 * (progressPanel.getAttribute('width')));
-      updateProgressFillPosition();
-    }
-
-    function updateProgressFillPosition() {
-      var progressPanel = document.querySelector('#progress-panel');
-      var progressFill = document.querySelector('#progress-fill');
-      
-      var panelWidth = progressPanel.getAttribute('width');
-      var fillWidth = progressFill.getAttribute('width');
-      var newPositionX = - (panelWidth / 2) + (fillWidth / 2);
-      
-      progressFill.setAttribute('position', `${newPositionX} 0.08 0.005`);
     }
 
     function testPlaySound(sound) {      

@@ -9,7 +9,6 @@ const logMessages = [];
     const blob = new Blob([logMessages.join('\n')], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
-  
     // Get the current date and time
     const now = new Date();
     const dateStr = now.toISOString().replace(/[:.]/g, '-');
