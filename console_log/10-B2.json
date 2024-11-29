@@ -1,0 +1,104 @@
+[
+  {
+    "Configuration": "B2",
+    "Sequence": 1,
+    "Duration": 8.234,
+    "Path": "../audio_processing/peking25-10sec/142_1410000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 2,
+    "Duration": 1.667,
+    "Path": "../audio_processing/peking25-10sec/136_1350000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 3,
+    "Duration": 7.69,
+    "Path": "../audio_processing/peking25-10sec/105_1040000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 4,
+    "Duration": 5.022,
+    "Path": "../audio_processing/peking25-10sec/146_1450000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 5,
+    "Duration": 6.457,
+    "Path": "../audio_processing/peking25-10sec/125_1240000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 6,
+    "Duration": 2.032,
+    "Path": "../audio_processing/peking25-10sec/141_1400000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 7,
+    "Duration": 9.998,
+    "Path": "../audio_processing/peking25-10sec/139_1380000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 8,
+    "Duration": 10.001,
+    "Path": "../audio_processing/peking25-10sec/108_1070000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 9,
+    "Duration": 10.001,
+    "Path": "../audio_processing/peking25-10sec/108_1070000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 10,
+    "Duration": 1.267,
+    "Path": "../audio_processing/peking25-10sec/96_950000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 11,
+    "Duration": 9.996,
+    "Path": "../audio_processing/peking25-10sec/113_1120000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 12,
+    "Duration": 4.866,
+    "Path": "../audio_processing/peking25-10sec/86_850000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 13,
+    "Duration": 9.999,
+    "Path": "../audio_processing/peking25-10sec/130_1290000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 14,
+    "Duration": 1.354,
+    "Path": "../audio_processing/peking25-10sec/130_1290000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 15,
+    "Duration": 6.035,
+    "Path": "../audio_processing/peking25-10sec/131_1300000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 16,
+    "Duration": 4.433,
+    "Path": "../audio_processing/peking25-10sec/135_1340000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 17,
+    "Duration": 9.997,
+    "Path": "../audio_processing/peking25-10sec/106_1050000.wav"
+  }
+]

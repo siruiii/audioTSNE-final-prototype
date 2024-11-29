@@ -1,0 +1,74 @@
+[
+  {
+    "Configuration": "A2",
+    "Sequence": 1,
+    "Duration": 3.789,
+    "Path": "../audio_processing/meshrep25-10sec/81_800000.wav"
+  },
+  {
+    "Configuration": "A2",
+    "Sequence": 2,
+    "Duration": 2.998,
+    "Path": "../audio_processing/meshrep25-10sec/85_840000.wav"
+  },
+  {
+    "Configuration": "A2",
+    "Sequence": 3,
+    "Duration": 1.545,
+    "Path": "../audio_processing/meshrep25-10sec/84_830000.wav"
+  },
+  {
+    "Configuration": "A2",
+    "Sequence": 4,
+    "Duration": 1.333,
+    "Path": "../audio_processing/meshrep25-10sec/85_840000.wav"
+  },
+  {
+    "Configuration": "A2",
+    "Sequence": 5,
+    "Duration": 6.966,
+    "Path": "../audio_processing/meshrep25-10sec/81_800000.wav"
+  },
+  {
+    "Configuration": "A2",
+    "Sequence": 6,
+    "Duration": 0.388,
+    "Path": "../audio_processing/meshrep25-10sec/104_1030000.wav"
+  },
+  {
+    "Configuration": "A2",
+    "Sequence": 7,
+    "Duration": 0.145,
+    "Path": "../audio_processing/meshrep25-10sec/106_1050000.wav"
+  },
+  {
+    "Configuration": "A2",
+    "Sequence": 8,
+    "Duration": 1.81,
+    "Path": "../audio_processing/meshrep25-10sec/106_1050000.wav"
+  },
+  {
+    "Configuration": "A2",
+    "Sequence": 9,
+    "Duration": 1.266,
+    "Path": "../audio_processing/meshrep25-10sec/143_1420000.wav"
+  },
+  {
+    "Configuration": "A2",
+    "Sequence": 10,
+    "Duration": 5.266,
+    "Path": "../audio_processing/meshrep25-10sec/111_1100000.wav"
+  },
+  {
+    "Configuration": "A2",
+    "Sequence": 11,
+    "Duration": 1.244,
+    "Path": "../audio_processing/meshrep25-10sec/131_1300000.wav"
+  },
+  {
+    "Configuration": "A2",
+    "Sequence": 12,
+    "Duration": 1.378,
+    "Path": "../audio_processing/meshrep25-10sec/144_1430000.wav"
+  }
+]

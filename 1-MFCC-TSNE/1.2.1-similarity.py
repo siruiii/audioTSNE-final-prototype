@@ -23,7 +23,7 @@ def compute_similarity_matrix(features_list):
 # Visualize the similarity matrix
 def visualize_similarity_matrix(similarity_matrix, output_image_path):
     plt.figure(figsize=(10, 8))
-    sns.heatmap(similarity_matrix, cmap='viridis', annot=False, fmt=".2f")
+    sns.heatmap(similarity_matrix, cmap='winter', annot=False, fmt=".2f")
     plt.title('Similarity Matrix Heatmap')
     plt.xlabel('Audio Files')
     plt.ylabel('Audio Files')
@@ -31,8 +31,8 @@ def visualize_similarity_matrix(similarity_matrix, output_image_path):
     plt.show()
 
 # Example usage
-features_json_path = '../audio_processing/meshrep+peking_features.json'
-similarity_matrix_image_path = '../audio_processing/meshrep+peking_similarity_matrix.png'
+features_json_path = 'meshrep25-10sec_features.json'
+similarity_matrix_image_path = 'meshrep25-5sec_features_similarity_matrix.png'
 
 # Load features and compute similarity matrix
 features_list = load_features(features_json_path)

@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 # Load the JSON file
-with open('../3-Mapping/meshrep25-5sec_coordinates.json', 'r') as file:
+with open('../3-Mapping/_coordinates.json', 'r') as file:
     data = json.load(file)
 
 # Extract 3D points
@@ -15,13 +15,13 @@ ax = fig.add_subplot(111, projection='3d')
 
 # Scatter plot for all points
 for point in points_3d:
-    ax.scatter(-point[0], point[2], point[1], color='b')
+    ax.scatter(-point[0], point[2], point[1], color='grey', s=5)
 
 # Labels and title
 ax.set_xlabel('X')
 ax.set_ylabel('Y')
 ax.set_zlabel('Z')
-ax.set_title('3D Points Visualization')
+#ax.set_title('3D Mapping of t-SNE Results')
 
 # Display the plot
 plt.show()

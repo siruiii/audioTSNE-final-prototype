@@ -1,0 +1,856 @@
+[
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_126000.wav",
+        "point": [
+            -2.8534014225006104,
+            -0.14967122673988342
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_138000.wav",
+        "point": [
+            -2.489537000656128,
+            -0.08826182782649994
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_15000.wav",
+        "point": [
+            -3.168989419937134,
+            0.034971147775650024
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_102000.wav",
+        "point": [
+            -1.8003009557724,
+            0.12255092710256577
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_180000.wav",
+        "point": [
+            -0.7427037358283997,
+            -0.5145676136016846
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_9000.wav",
+        "point": [
+            -3.0871803760528564,
+            0.15054917335510254
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_87000.wav",
+        "point": [
+            -1.9916554689407349,
+            0.5298253297805786
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_99000.wav",
+        "point": [
+            -1.1861838102340698,
+            -0.40652671456336975
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_147000.wav",
+        "point": [
+            -1.6512255668640137,
+            -0.17485472559928894
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_78000.wav",
+        "point": [
+            -2.878187894821167,
+            0.2652163803577423
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_66000.wav",
+        "point": [
+            -2.8120803833007812,
+            0.1551486700773239
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_159000.wav",
+        "point": [
+            -1.6569769382476807,
+            -0.05028171464800835
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_171000.wav",
+        "point": [
+            -3.05651593208313,
+            0.01763135753571987
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_33000.wav",
+        "point": [
+            -3.3261985778808594,
+            -0.17946676909923553
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_21000.wav",
+        "point": [
+            -1.468609094619751,
+            -0.302114337682724
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_42000.wav",
+        "point": [
+            -2.536043643951416,
+            -0.20932868123054504
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_3000.wav",
+        "point": [
+            -0.7620836496353149,
+            -0.8500320911407471
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_0.wav",
+        "point": [
+            -0.8669175505638123,
+            -0.6965242028236389
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_108000.wav",
+        "point": [
+            -2.964278221130371,
+            0.14674514532089233
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_54000.wav",
+        "point": [
+            -2.852050304412842,
+            -0.20038306713104248
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_120000.wav",
+        "point": [
+            -2.4400341510772705,
+            0.2509464919567108
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_132000.wav",
+        "point": [
+            -1.5254368782043457,
+            -0.6175151467323303
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_114000.wav",
+        "point": [
+            -2.6596481800079346,
+            -0.10155424475669861
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_48000.wav",
+        "point": [
+            -1.4344847202301025,
+            -0.3828781247138977
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_177000.wav",
+        "point": [
+            -1.1789524555206299,
+            -0.7404504418373108
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_39000.wav",
+        "point": [
+            -3.2199912071228027,
+            -0.26782700419425964
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_27000.wav",
+        "point": [
+            -2.323409080505371,
+            -0.17755895853042603
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_165000.wav",
+        "point": [
+            -3.1261682510375977,
+            0.07987726479768753
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_72000.wav",
+        "point": [
+            -2.6156346797943115,
+            -0.18741042912006378
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_153000.wav",
+        "point": [
+            -3.168360710144043,
+            -0.18402662873268127
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_60000.wav",
+        "point": [
+            -2.2732772827148438,
+            -0.0750642642378807
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_141000.wav",
+        "point": [
+            -1.0808804035186768,
+            -0.22378800809383392
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_93000.wav",
+        "point": [
+            -1.3181077241897583,
+            0.19442377984523773
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_81000.wav",
+        "point": [
+            -2.6483092308044434,
+            0.2223680317401886
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_84000.wav",
+        "point": [
+            -1.5916085243225098,
+            0.12195468693971634
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_96000.wav",
+        "point": [
+            -2.146531105041504,
+            -0.015699876472353935
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_30000.wav",
+        "point": [
+            -2.4112250804901123,
+            -0.08768808841705322
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_111000.wav",
+        "point": [
+            -2.378887414932251,
+            0.2251078486442566
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_144000.wav",
+        "point": [
+            -1.6458654403686523,
+            -0.08942929655313492
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_18000.wav",
+        "point": [
+            -2.56455135345459,
+            0.23379337787628174
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_69000.wav",
+        "point": [
+            -2.823495388031006,
+            -0.0996563509106636
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_156000.wav",
+        "point": [
+            -3.1429953575134277,
+            0.14313945174217224
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_135000.wav",
+        "point": [
+            -2.9636619091033936,
+            -0.18386244773864746
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_51000.wav",
+        "point": [
+            -2.5385332107543945,
+            0.1818648725748062
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_162000.wav",
+        "point": [
+            -2.3125157356262207,
+            0.23826250433921814
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_75000.wav",
+        "point": [
+            -1.8861922025680542,
+            0.252037912607193
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_129000.wav",
+        "point": [
+            -1.6516281366348267,
+            -0.12409409135580063
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_6000.wav",
+        "point": [
+            -1.4956086874008179,
+            0.14815209805965424
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_63000.wav",
+        "point": [
+            -2.2312586307525635,
+            -0.3834748864173889
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_150000.wav",
+        "point": [
+            -2.161285400390625,
+            0.11143605411052704
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_12000.wav",
+        "point": [
+            -2.6549832820892334,
+            0.21650968492031097
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_105000.wav",
+        "point": [
+            -1.5055381059646606,
+            0.31988710165023804
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_24000.wav",
+        "point": [
+            -3.1197195053100586,
+            -0.19487448036670685
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_117000.wav",
+        "point": [
+            -2.578880548477173,
+            0.08672066777944565
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_174000.wav",
+        "point": [
+            -2.0432894229888916,
+            0.06571275740861893
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_36000.wav",
+        "point": [
+            -1.9745640754699707,
+            -0.08012539148330688
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_90000.wav",
+        "point": [
+            -1.792629361152649,
+            0.19427891075611115
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_123000.wav",
+        "point": [
+            -3.0852210521698,
+            0.020835138857364655
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_168000.wav",
+        "point": [
+            -3.048384189605713,
+            0.19047555327415466
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_57000.wav",
+        "point": [
+            -2.2894630432128906,
+            0.12777984142303467
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1vocal3sec/chunk_45000.wav",
+        "point": [
+            -2.515254497528076,
+            -0.3522663414478302
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_126000.wav",
+        "point": [
+            -1.5924557447433472,
+            -1.4024369716644287
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_138000.wav",
+        "point": [
+            -1.9367364645004272,
+            -1.5180145502090454
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_15000.wav",
+        "point": [
+            -1.8712748289108276,
+            -1.3901951313018799
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_102000.wav",
+        "point": [
+            -2.3440475463867188,
+            -0.9321072101593018
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_180000.wav",
+        "point": [
+            -1.2701493501663208,
+            -0.08263903856277466
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_9000.wav",
+        "point": [
+            -2.2338454723358154,
+            -1.349774956703186
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_87000.wav",
+        "point": [
+            -2.693794012069702,
+            -1.0172324180603027
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_99000.wav",
+        "point": [
+            -3.2804861068725586,
+            -0.9531084895133972
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_147000.wav",
+        "point": [
+            -0.13495320081710815,
+            -0.6883183121681213
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_78000.wav",
+        "point": [
+            -2.7786872386932373,
+            -0.8659234046936035
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_66000.wav",
+        "point": [
+            -2.4725470542907715,
+            -1.182429552078247
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_159000.wav",
+        "point": [
+            -2.7961416244506836,
+            -0.9145916104316711
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_171000.wav",
+        "point": [
+            -2.6973555088043213,
+            -0.9066510200500488
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_33000.wav",
+        "point": [
+            -1.911385178565979,
+            -1.4543362855911255
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_21000.wav",
+        "point": [
+            -1.8711298704147339,
+            -0.6213845610618591
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_42000.wav",
+        "point": [
+            -0.25898072123527527,
+            -0.6310767531394958
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_3000.wav",
+        "point": [
+            -3.465294122695923,
+            -0.9045284390449524
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_0.wav",
+        "point": [
+            -2.775181293487549,
+            -1.0545145273208618
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_108000.wav",
+        "point": [
+            -2.3146891593933105,
+            -1.11171293258667
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_54000.wav",
+        "point": [
+            -1.9835282564163208,
+            -1.1975369453430176
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_120000.wav",
+        "point": [
+            -2.365074396133423,
+            -1.2894001007080078
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_132000.wav",
+        "point": [
+            -1.9987972974777222,
+            -0.4282296597957611
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_114000.wav",
+        "point": [
+            -2.197629451751709,
+            -0.5099647641181946
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_48000.wav",
+        "point": [
+            -2.0155365467071533,
+            -0.5669092535972595
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_177000.wav",
+        "point": [
+            -3.1058056354522705,
+            -1.002152442932129
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_39000.wav",
+        "point": [
+            -0.23721285164356232,
+            -0.6364298462867737
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_27000.wav",
+        "point": [
+            -1.2469539642333984,
+            -0.5545108318328857
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_165000.wav",
+        "point": [
+            -2.676628589630127,
+            -1.25248384475708
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_72000.wav",
+        "point": [
+            -2.414445638656616,
+            -0.6726782917976379
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_153000.wav",
+        "point": [
+            -2.8265225887298584,
+            -0.9963806867599487
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_60000.wav",
+        "point": [
+            -2.4303948879241943,
+            -0.7226821780204773
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_141000.wav",
+        "point": [
+            -0.8607656359672546,
+            -0.6024187803268433
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_93000.wav",
+        "point": [
+            -2.730551242828369,
+            -0.9379079341888428
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_81000.wav",
+        "point": [
+            -2.867541790008545,
+            -1.098997950553894
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_84000.wav",
+        "point": [
+            -3.1128950119018555,
+            -1.0462641716003418
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_96000.wav",
+        "point": [
+            -2.6926252841949463,
+            -0.753264844417572
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_30000.wav",
+        "point": [
+            -1.4423606395721436,
+            -0.718952476978302
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_111000.wav",
+        "point": [
+            -2.4811835289001465,
+            -1.071161150932312
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_144000.wav",
+        "point": [
+            -0.1332124024629593,
+            -0.6889325976371765
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_18000.wav",
+        "point": [
+            -1.6868380308151245,
+            -1.491072177886963
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_69000.wav",
+        "point": [
+            -1.6010411977767944,
+            -0.7216492295265198
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_156000.wav",
+        "point": [
+            -2.8155720233917236,
+            -1.0315287113189697
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_135000.wav",
+        "point": [
+            -2.266845464706421,
+            -1.4022082090377808
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_51000.wav",
+        "point": [
+            -2.2910873889923096,
+            -1.1395823955535889
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_162000.wav",
+        "point": [
+            -1.7255637645721436,
+            -0.6316010355949402
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_75000.wav",
+        "point": [
+            -3.1424660682678223,
+            -1.0045067071914673
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_129000.wav",
+        "point": [
+            -1.8143384456634521,
+            -1.0145652294158936
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_6000.wav",
+        "point": [
+            -3.022465944290161,
+            -0.9952887892723083
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_63000.wav",
+        "point": [
+            -2.5517101287841797,
+            -0.7424997687339783
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_150000.wav",
+        "point": [
+            -0.6067688465118408,
+            -0.15560993552207947
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_12000.wav",
+        "point": [
+            -1.6709054708480835,
+            -1.1551669836044312
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_105000.wav",
+        "point": [
+            -2.9745805263519287,
+            -1.037192702293396
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_24000.wav",
+        "point": [
+            -0.5614973306655884,
+            -0.529765784740448
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_117000.wav",
+        "point": [
+            -2.6033389568328857,
+            -1.1922606229782104
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_174000.wav",
+        "point": [
+            -3.223012924194336,
+            -1.2030308246612549
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_36000.wav",
+        "point": [
+            -0.6410529017448425,
+            -0.7222232222557068
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_90000.wav",
+        "point": [
+            -3.0330350399017334,
+            -0.9558436870574951
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_123000.wav",
+        "point": [
+            -2.1178548336029053,
+            -1.3953489065170288
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_168000.wav",
+        "point": [
+            -2.565258264541626,
+            -0.8745712041854858
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_57000.wav",
+        "point": [
+            -2.1739041805267334,
+            -0.9716333150863647
+        ]
+    },
+    {
+        "path": "huangmei_1split3sec/huangmei_1inst3sec/chunk_45000.wav",
+        "point": [
+            -0.39273250102996826,
+            -0.5855004191398621
+        ]
+    }
+]

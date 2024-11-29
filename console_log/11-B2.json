@@ -1,0 +1,194 @@
+[
+  {
+    "Configuration": "B2",
+    "Sequence": 1,
+    "Duration": 0.181,
+    "Path": "../audio_processing/peking25-10sec/119_1180000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 2,
+    "Duration": 1.746,
+    "Path": "../audio_processing/peking25-10sec/122_1210000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 3,
+    "Duration": 1.557,
+    "Path": "../audio_processing/peking25-10sec/105_1040000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 4,
+    "Duration": 1.009,
+    "Path": "../audio_processing/peking25-10sec/136_1350000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 5,
+    "Duration": 2.689,
+    "Path": "../audio_processing/peking25-10sec/135_1340000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 6,
+    "Duration": 4.168,
+    "Path": "../audio_processing/peking25-10sec/128_1270000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 7,
+    "Duration": 1.022,
+    "Path": "../audio_processing/peking25-10sec/132_1310000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 8,
+    "Duration": 1.123,
+    "Path": "../audio_processing/peking25-10sec/120_1190000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 9,
+    "Duration": 0.001,
+    "Path": "../audio_processing/peking25-10sec/119_1180000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 10,
+    "Duration": 0.153,
+    "Path": "../audio_processing/peking25-10sec/136_1350000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 11,
+    "Duration": 0.011,
+    "Path": "../audio_processing/peking25-10sec/125_1240000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 12,
+    "Duration": 0.112,
+    "Path": "../audio_processing/peking25-10sec/124_1230000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 13,
+    "Duration": 2.832,
+    "Path": "../audio_processing/peking25-10sec/83_820000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 14,
+    "Duration": 4.666,
+    "Path": "../audio_processing/peking25-10sec/82_810000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 15,
+    "Duration": 1.91,
+    "Path": "../audio_processing/peking25-10sec/126_1250000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 16,
+    "Duration": 6.412,
+    "Path": "../audio_processing/peking25-10sec/107_1060000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 17,
+    "Duration": 1.488,
+    "Path": "../audio_processing/peking25-10sec/128_1270000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 18,
+    "Duration": 0.411,
+    "Path": "../audio_processing/peking25-10sec/107_1060000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 19,
+    "Duration": 0.332,
+    "Path": "../audio_processing/peking25-10sec/107_1060000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 20,
+    "Duration": 0.322,
+    "Path": "../audio_processing/peking25-10sec/103_1020000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 21,
+    "Duration": 1.088,
+    "Path": "../audio_processing/peking25-10sec/142_1410000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 22,
+    "Duration": 0.933,
+    "Path": "../audio_processing/peking25-10sec/104_1030000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 23,
+    "Duration": 0.855,
+    "Path": "../audio_processing/peking25-10sec/138_1370000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 24,
+    "Duration": 0.621,
+    "Path": "../audio_processing/peking25-10sec/140_1390000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 25,
+    "Duration": 0.289,
+    "Path": "../audio_processing/peking25-10sec/141_1400000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 26,
+    "Duration": 1.51,
+    "Path": "../audio_processing/peking25-10sec/145_1440000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 27,
+    "Duration": 0.833,
+    "Path": "../audio_processing/peking25-10sec/139_1380000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 28,
+    "Duration": 0.366,
+    "Path": "../audio_processing/peking25-10sec/144_1430000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 29,
+    "Duration": 0.244,
+    "Path": "../audio_processing/peking25-10sec/141_1400000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 30,
+    "Duration": 0.455,
+    "Path": "../audio_processing/peking25-10sec/124_1230000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 31,
+    "Duration": 1.012,
+    "Path": "../audio_processing/peking25-10sec/134_1330000.wav"
+  },
+  {
+    "Configuration": "B2",
+    "Sequence": 32,
+    "Duration": 0.411,
+    "Path": "../audio_processing/peking25-10sec/107_1060000.wav"
+  }
+]

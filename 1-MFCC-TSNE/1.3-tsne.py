@@ -53,8 +53,8 @@ def visualize_tsne(tsne_results, file_paths):
     plt.show()
 
 # Example usage
-features_json_path = '../audio_processing/peking25-10sec_features.json'
-tsne_results_json_path = '../audio_processing/peking25-10sec_tsne_results1.json'
+features_json_path = 'peking25-10sec_features.json'
+tsne_results_json_path = 'peking25-10sec_tsne_results1.json'
 
 # Load features and run t-SNE
 features_list = load_features(features_json_path)

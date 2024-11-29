@@ -3,11 +3,11 @@ import json
 import math
 
 # Read file 1
-with open('../console_log/A1-console.json', 'r') as f:
+with open('../console_log/5-A1.json', 'r') as f:
     file1_data = json.load(f)
 
 # Read file 2
-with open('../3-Mapping/meshrep25-5sec_coordinates.json', 'r') as f:
+with open('../3-Mapping/meshrep25-5sec_coordinates1.json', 'r') as f:
     file2_data = json.load(f)
 
 # Create DataFrames
@@ -22,5 +22,5 @@ df_combined = pd.merge(df1, df2, on='Path', how='left')
 result_dict = df_combined.to_dict(orient='records')
 
 # Save combined DataFrame to JSON
-with open('merge_result1.json', 'w') as file:
+with open('5-A1-merge.json', 'w') as file:
     json.dump(result_dict, file, indent=4)

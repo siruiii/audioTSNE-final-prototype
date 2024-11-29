@@ -1,0 +1,370 @@
+[
+    {
+        "Configuration": "A2",
+        "Sequence": 1,
+        "Duration": 10.053,
+        "Path": "../audio_processing/meshrep25-10sec/130_1290000.wav",
+        "2D_Coord": [
+            70.73131561279297,
+            -111.52786254882812
+        ],
+        "Cluster": 2,
+        "point3d": [
+            113.60641102674325,
+            -111.52786254882812,
+            -97.94683952850481
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 2,
+        "Duration": 9.332,
+        "Path": "../audio_processing/meshrep25-10sec/146_1450000.wav",
+        "2D_Coord": [
+            68.05863952636719,
+            -136.7282257080078
+        ],
+        "Cluster": 2,
+        "point3d": [
+            104.45637175656839,
+            -136.7282257080078,
+            -107.65159729169643
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 3,
+        "Duration": 10.003,
+        "Path": "../audio_processing/meshrep25-10sec/149_1480000.wav",
+        "2D_Coord": [
+            76.7646484375,
+            -124.9352035522461
+        ],
+        "Cluster": 2,
+        "point3d": [
+            130.8593707034383,
+            -124.9352035522461,
+            -73.32001840629965
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 4,
+        "Duration": 4.934,
+        "Path": "../audio_processing/meshrep25-10sec/100_990000.wav",
+        "2D_Coord": [
+            -75.98453521728516,
+            6.238120079040527
+        ],
+        "Cluster": 1,
+        "point3d": [
+            115.80335666759682,
+            6.238120079040527,
+            95.33930241257988
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 5,
+        "Duration": 3.91,
+        "Path": "../audio_processing/meshrep25-10sec/147_1460000.wav",
+        "2D_Coord": [
+            92.11001586914062,
+            -125.7975082397461
+        ],
+        "Cluster": 2,
+        "point3d": [
+            150.0,
+            -125.7975082397461,
+            -3.6739403974420595e-14
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 6,
+        "Duration": 10.001,
+        "Path": "../audio_processing/meshrep25-10sec/102_1010000.wav",
+        "2D_Coord": [
+            -72.72618103027344,
+            29.723573684692383
+        ],
+        "Cluster": 0,
+        "point3d": [
+            104.80455641116828,
+            29.723573684692383,
+            107.31265049125496
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 7,
+        "Duration": 10.004,
+        "Path": "../audio_processing/meshrep25-10sec/98_970000.wav",
+        "2D_Coord": [
+            -78.13453674316406,
+            42.9030876159668
+        ],
+        "Cluster": 0,
+        "point3d": [
+            122.32319079096462,
+            42.9030876159668,
+            86.81611022567914
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 8,
+        "Duration": 10.003,
+        "Path": "../audio_processing/meshrep25-10sec/105_1040000.wav",
+        "2D_Coord": [
+            -90.24600982666016,
+            32.058204650878906
+        ],
+        "Cluster": 0,
+        "point3d": [
+            146.573959986693,
+            32.058204650878906,
+            31.875919654487085
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 9,
+        "Duration": 5.268,
+        "Path": "../audio_processing/meshrep25-10sec/94_930000.wav",
+        "2D_Coord": [
+            -82.23612213134766,
+            56.53690719604492
+        ],
+        "Cluster": 0,
+        "point3d": [
+            132.999438201096,
+            56.53690719604492,
+            69.3624497706997
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 10,
+        "Duration": 10.003,
+        "Path": "../audio_processing/meshrep25-10sec/124_1230000.wav",
+        "2D_Coord": [
+            -56.355552673339844,
+            12.429708480834961
+        ],
+        "Cluster": 1,
+        "point3d": [
+            34.012397039594276,
+            12.429708480834961,
+            146.09297329995374
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 11,
+        "Duration": 9.766,
+        "Path": "../audio_processing/meshrep25-10sec/88_870000.wav",
+        "2D_Coord": [
+            -18.079946517944336,
+            -60.497291564941406
+        ],
+        "Cluster": -1,
+        "point3d": [
+            -129.7479647102516,
+            -60.497291564941406,
+            75.26928758495927
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 12,
+        "Duration": 10.004,
+        "Path": "../audio_processing/meshrep25-10sec/134_1330000.wav",
+        "2D_Coord": [
+            3.5362308025360107,
+            -49.612979888916016
+        ],
+        "Cluster": 3,
+        "point3d": [
+            -147.1936099847,
+            -49.612979888916016,
+            -28.879771115298407
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 13,
+        "Duration": 10.003,
+        "Path": "../audio_processing/meshrep25-10sec/137_1360000.wav",
+        "2D_Coord": [
+            12.217273712158203,
+            -63.733089447021484
+        ],
+        "Cluster": 3,
+        "point3d": [
+            -132.86465695722353,
+            -63.733089447021484,
+            -69.62027672768413
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 14,
+        "Duration": 8.9,
+        "Path": "../audio_processing/meshrep25-10sec/136_1350000.wav",
+        "2D_Coord": [
+            18.450416564941406,
+            -50.6359748840332
+        ],
+        "Cluster": 3,
+        "point3d": [
+            -115.67686396663696,
+            -50.6359748840332,
+            -95.49273869171503
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 15,
+        "Duration": 1.592,
+        "Path": "../audio_processing/meshrep25-10sec/139_1380000.wav",
+        "2D_Coord": [
+            20.3597354888916,
+            -36.09334945678711
+        ],
+        "Cluster": 3,
+        "point3d": [
+            -109.37942836563,
+            -36.09334945678711,
+            -102.64570449077746
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 16,
+        "Duration": 10.002,
+        "Path": "../audio_processing/meshrep25-10sec/136_1350000.wav",
+        "2D_Coord": [
+            18.450416564941406,
+            -50.6359748840332
+        ],
+        "Cluster": 3,
+        "point3d": [
+            -115.67686396663696,
+            -50.6359748840332,
+            -95.49273869171503
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 17,
+        "Duration": 10.003,
+        "Path": "../audio_processing/meshrep25-10sec/139_1380000.wav",
+        "2D_Coord": [
+            20.3597354888916,
+            -36.09334945678711
+        ],
+        "Cluster": 3,
+        "point3d": [
+            -109.37942836563,
+            -36.09334945678711,
+            -102.64570449077746
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 18,
+        "Duration": 9.999,
+        "Path": "../audio_processing/meshrep25-10sec/133_1320000.wav",
+        "2D_Coord": [
+            24.325450897216797,
+            -20.437665939331055
+        ],
+        "Cluster": 3,
+        "point3d": [
+            -94.91981472627636,
+            -20.437665939331055,
+            -116.14744410588366
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 19,
+        "Duration": 10.0,
+        "Path": "../audio_processing/meshrep25-10sec/132_1310000.wav",
+        "2D_Coord": [
+            34.53982925415039,
+            -33.23490905761719
+        ],
+        "Cluster": 3,
+        "point3d": [
+            -50.759788321053385,
+            -33.23490905761719,
+            -141.150430001477
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 20,
+        "Duration": 10.001,
+        "Path": "../audio_processing/meshrep25-10sec/135_1340000.wav",
+        "2D_Coord": [
+            28.85820960998535,
+            -61.19990158081055
+        ],
+        "Cluster": 3,
+        "point3d": [
+            -76.38661886292276,
+            -61.19990158081055,
+            -129.09331686299868
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 21,
+        "Duration": 9.847,
+        "Path": "../audio_processing/meshrep25-10sec/89_880000.wav",
+        "2D_Coord": [
+            58.42943572998047,
+            -105.6974105834961
+        ],
+        "Cluster": 2,
+        "point3d": [
+            65.22628427467713,
+            -105.6974105834961,
+            -135.07602244558063
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 22,
+        "Duration": 2.024,
+        "Path": "../audio_processing/meshrep25-10sec/129_1280000.wav",
+        "2D_Coord": [
+            59.62977600097656,
+            -119.85392761230469
+        ],
+        "Cluster": 2,
+        "point3d": [
+            70.56894536249102,
+            -119.85392761230469,
+            -132.3632273345802
+        ]
+    },
+    {
+        "Configuration": "A2",
+        "Sequence": 23,
+        "Duration": 10.004,
+        "Path": "../audio_processing/meshrep25-10sec/140_1390000.wav",
+        "2D_Coord": [
+            45.286659240722656,
+            -51.143829345703125
+        ],
+        "Cluster": 3,
+        "point3d": [
+            1.8680449303234674,
+            -51.143829345703125,
+            -149.98836757608336
+        ]
+    }
+]
