@@ -57,8 +57,23 @@
     </a-assets>
     <a-sky src="#yourSkyboxImage"></a-sky>
 
-    <a-entity id="leftHand" laser-controls="hand: left" raycaster="objects: .raycastable" line="color: #118A7E"></a-entity>
-    
+    <a-entity id="leftHand" laser-controls="hand: left" raycaster="objects: .raycastable; enabled: false" >
+      <!-- Screen attached to the left controller -->
+      <a-entity id="controller-screen"
+                geometry="primitive: plane; height: 0.2; width: 0.4"
+                material="color: black"
+                position="0 0.25 -0.2">
+        <a-text id="screen-text" 
+                value="Altay tebrik Meshripi (Uyghur Meshrep) features a traditional Uyghur Meshrep gathering, showcasing cultural practices through music, dance, and social activities" 
+                align="center" 
+                color="white" 
+                position="0 0 0.01"
+                width="0.38"  <!-- Control wrapping width -->
+                wrap-count="20"> <!-- Set wrap count for long text -->
+        </a-text>
+      </a-entity>
+    </a-entity>
+
     <a-entity id="rightHand" laser-controls="hand: right" raycaster="objects: .raycastable" line="color: #118A7E"></a-entity>
     <a-camera position="0 0 0" id="camera"></a-camera>
     <a-entity id="sphere-container"></a-entity>
@@ -72,6 +87,10 @@
     let previousSphere = null;
     const soundStatus = {}; // Track sound status
     const jsonUrl = "../3-Mapping/meshrep25-10sec_coordinates1.json";
+
+    // Variable for screen text
+    let screenTextContent = "Meshrep";
+    let label="NaN";
 
     loadAndPreloadSounds(jsonUrl);
 
@@ -102,6 +121,8 @@
             const x3d = point[0];
             const z3d = point[2];
             const y3d = point[1];
+
+            const cluster=item.cluster;
 
             // Create the sphere
             const sphere = document.createElement("a-sphere");
@@ -152,6 +173,16 @@
               // Update clickedPoints and progress bar
               clickedPoints.add(id);
               updateProgressBar();
+              if(cluster==0){
+                label="Clapping";
+              }else if(cluster==1){
+                label="Singing (female & male)";
+              }else if(cluster==2){
+                label="Singing (female)";
+              }else if(cluster==3){
+                label="Oral Narrative";
+              }
+              updateScreenText(label);
             });
 
             sound.addEventListener('sound-ended', () => {
@@ -182,6 +213,12 @@
       const progressBar = document.getElementById("progress-bar");
       const percentage = (clickedPoints.size / totalPoint) * 100;
       progressBar.style.width = `${percentage}%`;
+    }
+
+    function updateScreenText(newText) {
+      const screenText = document.getElementById("screen-text");
+      screenText.setAttribute("value", newText);
+      screenTextContent = newText; // Update variable
     }
 
     function testPlaySound(sound) {      
