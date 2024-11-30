@@ -60,14 +60,14 @@
     <a-entity id="leftHand" laser-controls="hand: left" raycaster="objects: .raycastable" >
         <!-- Screen attached to the left controller -->
         <a-entity id="controller-screen"
-                  geometry="primitive: plane; height: 0.1; width: 0.2"
+                  geometry="primitive: plane; height: 0.2; width: 0.4"
                   material="color: black"
                   position="0 0.25 -0.2">
           <a-text id="screen-text" 
-                  value="Found among the Uygur people concentrated largely in China’s Xinjiang Uygur Autonomous Region, Meshrep constitutes the most important cultural carrier of Uygur traditions. A complete Meshrep event includes a rich collection of traditions and performance arts, such as music, dance, drama, folk arts, acrobatics, oral literature, foodways and games.!" 
+                  value="Altay tebrik Meshripi (Uyghur Meshrep) features a traditional Uyghur Meshrep gathering, showcasing cultural practices through music, dance, and social activities" 
                   align="center" 
                   color="white" 
-                  position="0 0.25 0.01"
+                  position="0 0 0.01"
                   width="0.38"  <!-- Control wrapping width -->
                   wrap-count="20"> <!-- Set wrap count for long text -->
           </a-text>
@@ -91,6 +91,7 @@
 
     // Variable for screen text
     let screenTextContent = "Meshrep";
+    let label="NaN";
 
     loadAndPreloadSounds(jsonUrl);
 
@@ -174,7 +175,16 @@
               // Update clickedPoints, progress bar, and screen text
               clickedPoints.add(id);
               updateProgressBar();
-              updateScreenText(`Cluster ${cluster}`);
+              if(cluster==0){
+                label="Man singing, Woman singing, Group of men singing";
+              }else if(cluster==1){
+                label="Talking, Clapping";
+              }else if(cluster==2){
+                label="Instrument A";
+              }else if(cluster==3){
+                label="Instrument B";
+              }
+              updateScreenText(label);
             });
 
             sound.addEventListener('sound-ended', () => {
