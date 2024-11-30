@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>A1-Meshrep(5sec)</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="./logTrajectory.js"></script>
+  <style>
+    #progress-container {
+      width: 100%;
+      background-color: #f3f3f3;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+    }
+    #progress-bar {
+      width: 0%;
+      height: 20px;
+      background-color: #4caf50;
+    }
+    #button-container {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      z-index: 10000;
+    }
+    #myButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #myButton:hover {
+      background-color: grey;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+  
+  <!-- Button Container -->
+  <div id="button-container">
+    <button id="myButton">Download Trajectory</button>
+  </div>
+  
+  <a-scene>
+    <a-assets>
+      <img id="yourSkyboxImage" src="https://cdn.glitch.global/e6d07a78-b93b-488b-bcea-1d44459841de/M3_Open_World_equirectangular-jpg_In_Xinjiang_under_the_752118551_11692043.webp?v=1723535223209" crossorigin="anonymous"/>
+    </a-assets>
+    <a-sky src="#yourSkyboxImage"></a-sky>
+
+    <a-entity id="leftHand" laser-controls="hand: left" raycaster="objects: .raycastable" line="color: #118A7E"></a-entity>
+    <a-entity id="rightHand" laser-controls="hand: right" raycaster="objects: .raycastable" line="color: #118A7E"></a-entity>
+    <a-camera position="0 0 0" id="camera"></a-camera>
+    <a-entity id="sphere-container"></a-entity>
+  </a-scene>
+  
+  <script>
+    let currentlyPlayingSound = null;
+    let startTime = null;
+    let clickedPoints = new Set();
+    let totalPoint = 0;
+    let previousSphere = null;
+    const soundStatus = {}; // Track sound status
+    const jsonUrl = "../3-Mapping/meshrep25-5sec_coordinates1.json";
+
+    loadAndPreloadSounds(jsonUrl);
+
+    document.querySelector('#myButton').addEventListener('click', () => {
+      const element = document.getElementById("progress-bar");
+      console.log(element.style.width);
+      downloadLog();
+      alert('Trajectory saved!');
+    });
+
+    function loadAndPreloadSounds(url) {
+      fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+          totalPoint = data.length;
+          const container = document.getElementById("sphere-container");
+
+          console.log(url,totalPoint);
+
+          // Create audio elements for preloading
+          data.forEach((item) => {
+            const soundPath = item.path;
+            soundStatus[soundPath] = { played: false, ended: false };
+
+            const id = parseInt(soundPath.split('/').pop().split('_')[0], 10);
+
+            // Rest of your sphere and sound creation logic
+            const point = item.point3d;
+            const x3d = point[0];
+            const z3d = point[2];
+            const y3d = point[1];
+
+            // Create the sphere
+            const sphere = document.createElement("a-sphere");
+            sphere.setAttribute("id", id);
+            sphere.setAttribute("position", `${x3d} ${y3d} ${z3d}`);
+            sphere.setAttribute("radius", "2");
+            sphere.setAttribute("color", "white");
+            sphere.classList.add('raycastable');
+
+            // Create the sound entity
+            const sound = document.createElement("a-sound");
+            sound.setAttribute("src", soundPath);
+            sound.setAttribute("autoplay", "false");
+            sound.setAttribute("volume", "0");
+            sphere.appendChild(sound);
+            container.appendChild(sphere);
+            testPlaySound(sound);
+
+            sphere.addEventListener("raycaster-intersected", () => {
+              // Check if there was a previous sphere
+              sound.setAttribute('volume', 50);
+              if (previousSphere && previousSphere !== sphere) {
+                previousSphere.setAttribute("radius", "2");
+                previousSphere.setAttribute("color", "green");
+                if (currentlyPlayingSound) {
+                  currentlyPlayingSound.components.sound.stopSound();
+                  logDurationAndStopSound();
+                }
+              }
+
+              // Check if the sound is currently playing
+              if (currentlyPlayingSound === sound) {
+                sphere.setAttribute("radius", "2");
+                sphere.setAttribute("color", "white");
+                sound.components.sound.stopSound();
+                startTime = null;
+                currentlyPlayingSound = null;
+              } else {
+                sphere.setAttribute("radius", "4");
+                sphere.setAttribute("color", "red");
+                sound.components.sound.playSound();
+                currentlyPlayingSound = sound;
+                startTime = new Date();
+              }
+
+              previousSphere = sphere;
+
+              // Update clickedPoints and progress bar
+              clickedPoints.add(id);
+              updateProgressBar();
+            });
+
+            sound.addEventListener('sound-ended', () => {
+              if (sphere === previousSphere) {
+                sphere.setAttribute("radius", "2");
+                sphere.setAttribute("color", "green");
+              }
+              logDurationAndStopSound();
+            });
+          });
+        })
+        .catch((error) => console.error("Error loading JSON:", error));
+    }
+
+    function logDurationAndStopSound() {
+      if (currentlyPlayingSound) {
+        currentlyPlayingSound.components.sound.stopSound();
+        const endTime = new Date();
+        const duration = (endTime - startTime) / 1000;
+        const soundPath = currentlyPlayingSound.getAttribute('src');
+        console.log(`Duration: ${duration}, Path: ${soundPath}`);
+        startTime = null;
+        currentlyPlayingSound = null;
+      }
+    }
+
+    function updateProgressBar() {
+      const progressBar = document.getElementById("progress-bar");
+      const percentage = (clickedPoints.size / totalPoint) * 100;
+      progressBar.style.width = `${percentage}%`;
+    }
+
+    function testPlaySound(sound) {      
+      const soundPath = sound.getAttribute('src');
+      soundStatus[soundPath] = { played: true, ended: false };
+
+      setTimeout(() => {
+        if (sound && sound.components && sound.components.sound) {
+          sound.components.sound.playSound();
+          setTimeout(() => {
+            sound.components.sound.stopSound();
+            soundStatus[soundPath].ended = true; // Mark sound as ended
+            checkAllSoundsEnded(); // Check if all sounds have finished
+          }, 500);
+        }
+      }, 100);
+    }
+
+    function checkAllSoundsEnded() {
+      // Check if all sounds have ended
+      const allSoundsEnded = Object.values(soundStatus).every(status => status.ended);
+      if (allSoundsEnded) {
+        setTimeout(() => {
+          alert("Ready! Please click VR to start...");  
+          }, 30000);
+      }
+    }
+  </script>
+</body>
+
+</html>
