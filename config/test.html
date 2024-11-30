@@ -57,20 +57,23 @@
     </a-assets>
     <a-sky src="#yourSkyboxImage"></a-sky>
 
-    <a-entity id="leftHand" laser-controls="hand: left" raycaster="objects: .raycastable; enabled: false" line="color: #118A7E">
-      <!-- Screen attached to the left controller -->
-      <a-entity id="controller-screen"
-                geometry="primitive: plane; height: 0.2; width: 0.4"
-                material="color: black"
-                position="0 0 -0.2">
-        <a-text id="screen-text" 
-                value="Welcome!" 
-                align="center" 
-                color="white" 
-                position="0 0 0.01">
-        </a-text>
+    <a-entity id="leftHand" laser-controls="hand: left" raycaster="objects: .raycastable" line="color: #118A7E">
+        <!-- Screen attached to the left controller -->
+        <a-entity id="controller-screen"
+                  geometry="primitive: plane; height: 0.2; width: 0.4"
+                  material="color: black"
+                  position="0 0 -0.2">
+          <a-text id="screen-text" 
+                  value="Welcome!" 
+                  align="center" 
+                  color="white" 
+                  position="0 0 0.01"
+                  width="0.38"  <!-- Control wrapping width -->
+                  wrap-count="20"> <!-- Set wrap count for long text -->
+          </a-text>
+        </a-entity>
       </a-entity>
-    </a-entity>
+      
 
     <a-entity id="rightHand" laser-controls="hand: right" raycaster="objects: .raycastable" line="color: #118A7E"></a-entity>
     <a-camera position="0 0 0" id="camera"></a-camera>
@@ -87,7 +90,7 @@
     const jsonUrl = "../3-Mapping/meshrep25-5sec_coordinates1.json";
 
     // Variable for screen text
-    let screenTextContent = "Welcome!";
+    let screenTextContent = "Found among the Uygur people concentrated largely in China’s Xinjiang Uygur Autonomous Region, Meshrep constitutes the most important cultural carrier of Uygur traditions. A complete Meshrep event includes a rich collection of traditions and performance arts, such as music, dance, drama, folk arts, acrobatics, oral literature, foodways and games.";
 
     loadAndPreloadSounds(jsonUrl);
 
