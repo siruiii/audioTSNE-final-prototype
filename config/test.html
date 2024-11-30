@@ -57,7 +57,21 @@
     </a-assets>
     <a-sky src="#yourSkyboxImage"></a-sky>
 
-    <a-entity id="leftHand" laser-controls="hand: left" raycaster="objects: .raycastable" line="color: #118A7E"></a-entity>
+    <a-entity id="leftHand" laser-controls="hand: left" raycaster="objects: .raycastable; enabled: false" line="color: #118A7E">
+      <!-- Screen attached to the left controller -->
+      <a-entity id="controller-screen"
+                geometry="primitive: plane; height: 0.2; width: 0.4"
+                material="color: black"
+                position="0 0 -0.2">
+        <a-text id="screen-text" 
+                value="Welcome!" 
+                align="center" 
+                color="white" 
+                position="0 0 0.01">
+        </a-text>
+      </a-entity>
+    </a-entity>
+
     <a-entity id="rightHand" laser-controls="hand: right" raycaster="objects: .raycastable" line="color: #118A7E"></a-entity>
     <a-camera position="0 0 0" id="camera"></a-camera>
     <a-entity id="sphere-container"></a-entity>
@@ -71,6 +85,9 @@
     let previousSphere = null;
     const soundStatus = {}; // Track sound status
     const jsonUrl = "../3-Mapping/meshrep25-5sec_coordinates1.json";
+
+    // Variable for screen text
+    let screenTextContent = "Welcome!";
 
     loadAndPreloadSounds(jsonUrl);
 
@@ -88,7 +105,7 @@
           totalPoint = data.length;
           const container = document.getElementById("sphere-container");
 
-          console.log(url,totalPoint);
+          console.log(url, totalPoint);
 
           // Create audio elements for preloading
           data.forEach((item) => {
@@ -149,9 +166,10 @@
 
               previousSphere = sphere;
 
-              // Update clickedPoints and progress bar
+              // Update clickedPoints, progress bar, and screen text
               clickedPoints.add(id);
               updateProgressBar();
+              updateScreenText(`Sphere ${id} clicked`);
             });
 
             sound.addEventListener('sound-ended', () => {
@@ -184,6 +202,12 @@
       progressBar.style.width = `${percentage}%`;
     }
 
+    function updateScreenText(newText) {
+      const screenText = document.getElementById("screen-text");
+      screenText.setAttribute("value", newText);
+      screenTextContent = newText; // Update variable
+    }
+
     function testPlaySound(sound) {      
       const soundPath = sound.getAttribute('src');
       soundStatus[soundPath] = { played: true, ended: false };
@@ -206,7 +230,7 @@
       if (allSoundsEnded) {
         setTimeout(() => {
           alert("Ready! Please click VR to start...");  
-          }, 30000);
+        }, 30000);
       }
     }
   </script>
